@@ -34,7 +34,7 @@
   "dependencies": {
     "wasmbuilder": "0.0.16",
     "wasmcurves": "0.2.0",
-    "web-worker": "^1.2.0"
+    "web-worker": "FLAXPrivacy/web-worker#master"
   },
   "devDependencies": {
     "blake2b": "^2.1.3",

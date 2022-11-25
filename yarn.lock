@@ -1002,9 +1002,9 @@ wasmcurves@0.2.0:
   dependencies:
     wasmbuilder "0.0.16"
 
-web-worker@FLAXPrivacy/web-worker:
+web-worker@FLAXPrivacy/web-worker#master:
   version "1.2.0"
-  resolved "https://codeload.github.com/FLAXPrivacy/web-worker/tar.gz/b60915a2015c1f1c08c0da4fd32f53065cca3b8b"
+  resolved "https://codeload.github.com/FLAXPrivacy/web-worker/tar.gz/c5523f8f237b6c070baed83ad7f196caedc84ac2"
 
 which@^2.0.1:
   version "2.0.2"

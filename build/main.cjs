@@ -5,14 +5,14 @@ Object.defineProperty(exports, '__esModule', { value: true });
 var crypto = require('crypto');
 var wasmcurves = require('wasmcurves');
 var os = require('os');
-var Worker = require('web-worker');
+var WebWorker = require('web-worker');
 var wasmbuilder = require('wasmbuilder');
 
 function _interopDefaultLegacy (e) { return e && typeof e === 'object' && 'default' in e ? e : { 'default': e }; }
 
 var crypto__default = /*#__PURE__*/_interopDefaultLegacy(crypto);
 var os__default = /*#__PURE__*/_interopDefaultLegacy(os);
-var Worker__default = /*#__PURE__*/_interopDefaultLegacy(Worker);
+var WebWorker__default = /*#__PURE__*/_interopDefaultLegacy(WebWorker);
 
 /* global BigInt */
 const hexLen = [ 0, 1, 2, 2, 3, 3, 3, 3, 4 ,4 ,4 ,4 ,4 ,4 ,4 ,4];
@@ -4465,7 +4465,7 @@ async function buildThreadManager(wasm, singleThread) {
 
         for (let i = 0; i<concurrency; i++) {
 
-            tm.workers[i] = new Worker__default["default"](workerSource);
+            tm.workers[i] = new WebWorker__default["default"](workerSource);
 
             tm.workers[i].addEventListener("message", getOnMsg(i));
 

@@ -4378,6 +4378,8 @@ function thread(self) {
 // const MEM_SIZE = 1000;  // Memory size in 64K Pakes (512Mb)
 const MEM_SIZE = 25;  // Memory size in 64K Pakes (1600Kb)
 
+const Buffer = require("buffer").Buffer;
+
 class Deferred {
     constructor() {
         this.promise = new Promise((resolve, reject)=> {

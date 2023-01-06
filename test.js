@@ -1,6 +1,7 @@
 
 const bn128 = require("./index").bn128;
 const utils = require("./index").utils;
+const Buffer = require("buffer").Buffer;
 
 const Fq = bn128.F1;
 

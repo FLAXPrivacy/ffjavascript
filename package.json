@@ -34,7 +34,8 @@
   "dependencies": {
     "wasmbuilder": "0.0.16",
     "wasmcurves": "0.2.0",
-    "web-worker": "nocturne-xyz/web-worker"
+    "web-worker": "nocturne-xyz/web-worker",
+    "buffer": "6.0.3"
   },
   "devDependencies": {
     "blake2b": "^2.1.3",

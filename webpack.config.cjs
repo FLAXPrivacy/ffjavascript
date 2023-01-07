@@ -6,6 +6,8 @@ module.exports = {
   output: {
     filename: "main.cjs",
     path: path.resolve(__dirname, "build"),
+    library: "ffjavascript",
+    libraryTarget: "var",
   },
   resolve: {
     fallback: {

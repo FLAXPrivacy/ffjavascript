@@ -1,4 +1,4 @@
-/* global window, navigator, Blob, Worker, WebAssembly */
+/* global window, navigator, Blob, WebWorker, WebAssembly */
 /*
     Copyright 2019 0KIMS association.
 
@@ -24,7 +24,7 @@ const MEM_SIZE = 25;  // Memory size in 64K Pakes (1600Kb)
 
 import thread from "./threadman_thread.js";
 import os from "os";
-import Worker from "web-worker";
+import WebWorker from "web-worker";
 
 class Deferred {
     constructor() {
@@ -122,7 +122,7 @@ export default async function buildThreadManager(wasm, singleThread) {
 
         for (let i = 0; i<concurrency; i++) {
 
-            tm.workers[i] = new Worker(workerSource);
+            tm.workers[i] = new WebWorker(workerSource);
 
             tm.workers[i].addEventListener("message", getOnMsg(i));
 

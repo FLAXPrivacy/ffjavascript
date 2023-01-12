@@ -26,6 +26,8 @@ import thread from "./threadman_thread.js";
 import os from "os";
 import WebWorker from "web-worker";
 
+const Buffer = require("buffer").Buffer;
+
 class Deferred {
     constructor() {
         this.promise = new Promise((resolve, reject)=> {
